@@ -1,4 +1,5 @@
 <!-- README.md -->
+
 <p align="center">
   <img src="assets/the-product-marvel-logo-transparent.png" alt="The Product Marvel Logo" width="300"/>
 </p>
@@ -9,13 +10,14 @@
 
 <div align="center">
 
-# 👋🏽 Hey, I’m <span style="background: linear-gradient(90deg, #ce9c9c /*#ffffff*/); -webkit-background-clip: text; color: transparent;">Maureen</span>! 😃
+# 👋🏽 Hey, I’m <!-- <span style="background: linear-gradient(90deg, #ce9c9c /*#ffffff*/); -webkit-background-clip: text; color: transparent;"> --> Maureen</span>! 😃
 
-## 🌍 <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;">Product Manager & Technology Leader</span>  
+## 🌍 <!-- <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;"> --> Product Manager & Technology Leader</span>  
 **Automation • Cloud • Fintech • Strategy**
 
 I build **human-centered digital products** where **strategy**, **design**, and **engineering** shake hands, and complex ideas meet simple, intuitive execution. 
-Think of me as a Swiss-Army-Knife leader who thrives in the messy middle: I bring the right tools to cut through complexity, bring clarity to chaos, and turn *“what if?”* into *“it’s live!”*
+
+Think of me as a **Swiss-Army-Knife leader** who thrives in the messy middle: I bring the right tools to cut through complexity, bring clarity to chaos, and turn *“what if?”* into *“it’s live!”*
 
 </div>
 <!--
@@ -32,7 +34,7 @@ Think of me as a Swiss-Army-Knife leader who thrives in the messy middle: I brin
 -->
 ---
 
-### 💡 <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;">What I Geek Out On</span>
+### 💡 <!-- <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;"> --> What I Geek Out On</span>
 
 🤖 AI & Emerging Tech
 ☁️ Cloud & DevOps Transformation
@@ -43,22 +45,20 @@ Think of me as a Swiss-Army-Knife leader who thrives in the messy middle: I brin
 
 ---
 
-### 🌱 <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;">Currently Exploring</span>
+### 🌱 <!-- <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;"> --> Currently Exploring</span>
 
 🎨 **Figma** - learning the language of pixels
 🧠 **AI for Product Efficiency** - automating the unfun stuff
 ✍🏽 **Writing & Case Studies** - because stories > slides
-💻 **Python** - turning ideas into scripts and *“it works!”* moments, because great PMs speak human *and* machine
+💻 **Python** - turning ideas into scripts and *“it works!”* moments (great PMs speak human *and* machine)
 
 ---
 
-### 🪴 <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;">Let’s Connect</span>
+### 🪴 <!-- <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;"> --> Let’s Connect</span>
 
-<p align="left">
-  💼 <a href="https://github.com/the-product-marvel/portfolio">GitHub</a> &nbsp; • &nbsp;
-  <!-- 🌐 <a href="https://linkedin.com/in/momureithi">LinkedIn</a> -->
-  📧 <a href="mailto:your.email@example.com">Email Me</a>
-</p>
+💼 [GitHub](https://github.com/the-product-marvel/portfolio)
+📧 [Email Me](mailto:mo.mureithiw@outlook.com)
+<!-- 🌐 [LinkedIn](https://linkedin.com/in/momureithi) -->
 
 <!--
 <p align="left">
@@ -83,13 +83,6 @@ Think of me as a Swiss-Army-Knife leader who thrives in the messy middle: I brin
 </p>
 
 <!--
-<p align="center">
-  <img src="assets/the_product_edit_logo_white.png" alt="The Product Edit Logo" width="600"/>
-</p>
-
-<h4 align="center">Smart, Human, and Built with Heart 💫</h4>
-
----
 
 ## 👋🏽 What's up! 😃 I'm Maureen Mureithi.
 
@@ -145,25 +138,6 @@ CRM Optimization | Customer Support & Ticket Resolution (Zendesk, Slack)
 
 ---
 
-## 💡 What I Geek Out On
-
-- Product Strategy & Discovery  
-- Fintech & API Platforms  
-- Cloud & DevOps Transformation  
-- Process Automation  
-- UX & Systems Thinking  
-- AI & Emerging Technologies
-
----
-
-## 📚 Currently Exploring
-
-- Figma for Product Design  
-- AI for Product Efficiency  
-- Continuous Learning through Case Studies and Writing  
-
----
-
 ## 🧠 Certifications
 | Certification |
 |---------------|
@@ -177,21 +151,5 @@ CRM Optimization | Customer Support & Ticket Resolution (Zendesk, Slack)
 | Product Strategy Micro-Certification (PSC)™️
 | Product-Led Growth Micro-Certification (PLGC)™️
 
-<p align="center">
-  <img src="assets/asana_foundations_certification_badge.png" alt="Product School" width="200"/>
-  <img src="assets/asana_ai_for_work_certification_badge.png" alt="Product School" width="200"/>
-</p>
-
 ---
-
-## 🪴 Contact Me
-
-💼 [GitHub](https://github.com/the-product-marvel/portfolio)
-🌐 [LinkedIn](https://linkedin.com/in/momureithi)
-📧 [Email Me](mailto:your.email@example.com)
-
----
-
-> “Technology is most powerful when it’s rooted in empathy and strategy.”
-
 -->
