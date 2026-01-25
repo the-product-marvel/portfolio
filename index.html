@@ -18,266 +18,143 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background: #ffffff;
-            color: #111;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 2.5rem 1.5rem;
-        }
-
-        .mauve {
-            color: #ce9c9c;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        header img {
-            width: 260px;
-            margin-bottom: 1rem;
-        }
-
-        h1,
-        h2 {
-            margin-bottom: 0.5rem;
-        }
-
-        .tagline {
-            text-align: center;
-            font-weight: 500;
-            margin-top: 0.75rem;
-            margin-bottom: 2rem;
-            color: #555;
-            background: linear-gradient(90deg, #ce9c9c, #e6bcbc);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(12px);
-            animation: fadeUp 0.7s ease forwards;
-        }
-
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .filters {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-        }
-
-        .filters button {
-            border: 1px solid rgba(206, 156, 156, 0.4);
-            background: transparent;
-            color: #111;
-            padding: 0.5rem 0.9rem;
-            border-radius: 999px;
-            cursor: pointer;
-            font-family: inherit;
-            transition: all 0.25s ease;
-        }
-
-        .filters button:hover,
-        .filters button.active {
-            background: rgba(206, 156, 156, 0.15);
-            border-color: #ce9c9c;
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(12px);
-            transition: all 0.6s ease;
-        }
-
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .card {
-            border: 1px solid #eee;
-            border-radius: 12px;
-            padding: 1.5rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(206, 156, 156, 0.25);
-        }
-
-        .site-footer {
-            margin-top: 5rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #555;
-            position: relative;
-            padding: 2.5rem 1rem 1.5rem;
-            overflow: hidden;
-        }
-
-        .site-footer::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at 50% 120%, rgba(206, 156, 156, 0.25), transparent 60%);
-            opacity: 0;
-            animation: footerGlow 6s ease-in-out infinite;
-            pointer-events: none;
-        }
-
-        .footer-quote {
-            font-style: italic;
-            max-width: 680px;
-            margin: 0 auto 1.5rem;
-            background: linear-gradient(90deg, #ce9c9c, #e6bcbc);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-
-        .footer-brand {
-            font-weight: 600;
-            background: linear-gradient(90deg, #ce9c9c, #e6bcbc);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-
-        @keyframes footerGlow {
-
-            0%,
-            100% {
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-        }
-
-        a {
-            color: #ce9c9c;
-            text-decoration: none;
-            font-weight: 600;
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
 
-        <header class="fade-in">
-            <img src="assets/the-product-marvel-logo-transparent.png" alt="The Product Marvel Logo" />
+        <header class="reveal">
+            <img src="assets/images/the-product-marvel-logo-transparent.png" alt="The Product Marvel Logo" />
             <h4 class="tagline">Smart, Human, and Built with Heart 💫</h4>
             <h1>Hey, I’m <span class="mauve">Maureen</span> 👋🏽</h1>
             <p>
-                I build <strong>human-centered digital products</strong> where
-                strategy, design, and engineering shake hands, and complex ideas meet simple, intuitive execution.
-                Think of me as a Swiss-Army-Knife leader who thrives in the messy middle: I bring the right tools to cut
-                through complexity, bring clarity to chaos, and turn <i>“what if?”</i> into </i>“it’s live!”</i>
+                I build <strong>human-centered digital products</strong> where strategy, design, and engineering shake
+                hands.
+                I thrive in the messy middle — bringing clarity to chaos and turning <em>“what if?”</em> into <em>“it’s
+                    live!”</em>
             </p>
         </header>
 
-        <section class="fade-in">
+        <!-- Case Studies -->
+        <section class="reveal">
             <h2 class="mauve">Featured Case Studies</h2>
 
             <div class="cards">
-                <div class="card">
+                <article class="card">
                     <h3>Content Translation @ Scale</h3>
-                    <p>
-                        Enabling global knowledge access through human-in-the-loop workflows.
-                    </p>
+                    <p>Enabling global knowledge access through human-in-the-loop workflows.</p>
                     <a href="projects/content-translation.html">Read case study →</a>
-                </div>
-
-                <!-- Add more cards as needed -->
+                </article>
             </div>
         </section>
 
-        <section class="fade-in" style="margin-top:3rem;">
-            <h2 class="mauve">💭 How I Think</h2>
-            <p>
-                My product philosophy, decision frameworks, and leadership approach.
-            </p>
+        <!-- How I Think -->
+        <section class="reveal">
+            <h2 class="mauve">How I Think</h2>
+            <p>My product philosophy, decision frameworks, and leadership approach.</p>
             <a href="how-i-think.html">Explore my thinking →</a>
         </section>
 
-        <section class="geek-out">
-            <h2 class="mauve">💡 What I Geek Out On</h2>
+        <!-- Geek Out -->
+        <section class="reveal">
+            <h2 class="mauve">What I Geek Out On</h2>
 
-            <div class="filters">
-                <button data-filter="ai">🤖 AI & Emerging Tech</button>
-                <button data-filter="cloud">☁️ Cloud & DevOps Transformation</button>
-                <button data-filter="fintech">💳 Fintech & API Platforms</button>
-                <button data-filter="automation">⚙️ Process Automation</button>
-                <button data-filter="strategy">🧩 Product Strategy & Discovery</button>
-                <button data-filter="ux">🎨 UX & Systems Thinking</button>
+            <div class="filters" role="tablist">
+                <button role="tab" aria-selected="true" data-target="ai">🤖 AI & Emerging Tech</button>
+                <button role="tab" data-target="cloud">☁️ Cloud & DevOps</button>
+                <button role="tab" data-target="fintech">💳 Fintech & APIs</button>
+                <button role="tab" data-target="automation">⚙️ Automation</button>
+                <button role="tab" data-target="strategy">🧩 Product Strategy</button>
+                <button role="tab" data-target="ux">🎨 UX & Systems Thinking</button>
+            </div>
+
+            <div class="geek-content">
+                <div class="geek-panel active" id="ai">
+                    <p>I’m fascinated by how AI augments human judgment — especially in messy, high-stakes decision
+                        spaces.</p>
+                </div>
+
+                <div class="geek-panel" id="cloud">
+                    <p>Designing resilient systems, scaling platforms, and helping teams ship with confidence.</p>
+                </div>
+
+                <div class="geek-panel" id="fintech">
+                    <p>Payments, APIs, and financial infrastructure that works for real humans.</p>
+                </div>
+
+                <div class="geek-panel" id="automation">
+                    <p>Eliminating busywork so people can focus on what actually matters.</p>
+                </div>
+
+                <div class="geek-panel" id="strategy">
+                    <p>Discovery, tradeoffs, and making hard calls with imperfect information.</p>
+                </div>
+
+                <div class="geek-panel" id="ux">
+                    <p>Systems thinking, accessibility, and designing for edge cases.</p>
+                </div>
             </div>
         </section>
 
-        <section class="geek-out reveal">
-            <section class="currently-exploring reveal">
+        <!-- Beyond the Roadmap -->
+        <section class="extras reveal">
+            <button class="extras-toggle" aria-expanded="false" aria-controls="extras-content">
+                ✨ Beyond the Roadmap
+                <span class="chevron">▾</span>
+            </button>
 
-                <section class="fade-in" style="margin-top:3rem;">
-                    <h2 class="mauve">Let’s Connect</h2>
-                    <p>
-                        I’m open to thoughtful conversations and meaningful work. Let's buiild something! 🛠️
-                    </p>
-                    <a href="https://github.com/the-product-marvel">GitHub</a>
-                    &nbsp;•&nbsp;
-                    <a href="https://forms.gle/REPLACE_WITH_FORM">Contact form</a>
-                </section>
+            <p class="section-subtitle">
+                The small, joyful things that keep me grounded, curious,
+                and quietly very good at problem-solving.
+            </p>
 
-                <footer class="site-footer">
-                    <p class="footer-quote">
-                        “Technology is most powerful when it’s rooted in empathy and strategy.”
-                    </p>
+            <div id="extras-content" class="extras-list" hidden>
+                <span>🧱 LEGO building</span>
+                <span>🎨 Coloring & creative play</span>
+                <span>🏀 Basketball</span>
+                <span>🥒 Pickleball</span>
+            </div>
+        </section>
 
-                    <p class="footer-brand">
-                        © <span class="footer-brand">The Product Marvel</span> <span id="year"></span>
-                    </p>
-                </footer>
+        <!-- Connect -->
+        <section class="reveal">
+            <h2 class="mauve">Let’s Connect</h2>
+            <p>I’m open to thoughtful conversations and meaningful work.</p>
 
-                <script>
-                    document.getElementById('year').textContent = new Date().getFullYear();
-                </script>
+            <a href="https://github.com/the-product-marvel" rel="noopener" target="_blank">GitHub</a>
+            &nbsp;•&nbsp;
+            <a href="https://forms.gle/REPLACE_WITH_FORM" rel="noopener" target="_blank">Contact form</a>
+        </section>
 
-                <script>
-                    const observer = new IntersectionObserver(entries => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add('visible');
-                            }
-                        });
-                    });
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p class="footer-quote">
+                “Technology is most powerful when it’s rooted in empathy and strategy.”
+            </p>
 
-                    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-                </script>
+            <p class="footer-brand">
+                © <span>The Product Marvel</span> <span id="year"></span>
+            </p>
+        </footer>
 
-    </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/reveal.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const toggle = document.querySelector('.extras-toggle');
+        const content = document.getElementById('extras-content');
+
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            content.hidden = expanded;
+        });
+    </script>
 </body>
 
 </html>

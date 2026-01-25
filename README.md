@@ -54,7 +54,7 @@ Think of me as a **Swiss-Army-Knife leader** who thrives in the messy middle: I 
 
 ---
 
-### 🪴 <!-- <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;"> --> Let’s Connect</span>
+### 🪴 <!-- <span style="background: linear-gradient(90deg, #ce9c9c); -webkit-background-clip: text; color: transparent;"> --> Let’s Build Something</span>
 
 💼 [GitHub](https://github.com/the-product-marvel/portfolio)
 📧 [Email Me](mailto:mo.mureithiw@outlook.com)
