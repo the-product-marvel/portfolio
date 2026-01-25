@@ -1,7 +1,7 @@
 <!-- README.md -->
 
 <p align="center">
-  <img src="assets/the-product-marvel-logo-transparent.png" alt="The Product Marvel Logo" width="300"/>
+  <img src="assets/images/the-product-marvel-logo-transparent.png" alt="The Product Marvel Logo" width="300"/>
 </p>
 
 <h4 align="center">Smart, Human, and Built with Heart 💫</h4>

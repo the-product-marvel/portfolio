@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Tenor Sans', sans-serif;
     background: #fff;
     color: #111;
     margin: 0;
@@ -52,6 +52,13 @@ header img {
     background: rgba(206, 156, 156, 0.15);
 }
 
+.section-subtitle {
+    font-size: 0.95rem;
+    color: #555;
+    max-width: 520px;
+    margin: 0.75rem 0 1.75rem;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -90,15 +97,22 @@ header img {
 
 .extras {
     margin-top: 4rem;
-    text-align: center;
+}
+
+.extras h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .extras-toggle {
     background: none;
     border: none;
-    font-size: 1.4rem;
     color: #ce9c9c;
     cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
 }
 
 .extras-list {
