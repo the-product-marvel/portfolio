@@ -130,7 +130,7 @@
             box-shadow: 0 10px 30px rgba(206, 156, 156, 0.25);
         }
 
-        footer {
+        .site-footer {
             margin-top: 5rem;
             text-align: center;
             font-size: 0.9rem;
@@ -138,6 +138,16 @@
             position: relative;
             padding: 2.5rem 1rem 1.5rem;
             overflow: hidden;
+        }
+
+        .footer-quote {
+            font-style: italic;
+            max-width: 680px;
+            margin: 0 auto 1.5rem;
+            color: #555;
+            background: linear-gradient(90deg, #ce9c9c, #e6bcbc);
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         footer::before {
@@ -167,6 +177,12 @@
             background: linear-gradient(90deg, var(--mauve), #e6bcbc);
             -webkit-background-clip: text;
             color: transparent;
+        }
+
+        a {
+            color: #ce9c9c;
+            text-decoration: none;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -236,13 +252,14 @@
                     <a href="https://forms.gle/REPLACE_WITH_FORM">Contact form</a>
                 </section>
 
-                <footer>
-                    <div>
-                        💭 <i>“Technology is most powerful when it’s rooted in empathy and strategy.”</i>
-                    </div>
-                    <div>
+                <footer class="site-footer">
+                    <p class="footer-quote">
+                        “Technology is most powerful when it’s rooted in empathy and strategy.”
+                    </p>
+
+                    <p class="footer-brand">
                         © <span class="footer-brand">The Product Marvel</span> <span id="year"></span>
-                    </div>
+                    </p>
                 </footer>
 
                 <script>
