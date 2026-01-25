@@ -66,6 +66,40 @@
             }
         }
 
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .filters button {
+            border: 1px solid rgba(206, 156, 156, 0.4);
+            background: transparent;
+            color: #111;
+            padding: 0.5rem 0.9rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.25s ease;
+        }
+
+        .filters button:hover,
+        .filters button.active {
+            background: rgba(206, 156, 156, 0.15);
+            border-color: #ce9c9c;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(12px);
+            transition: all 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -137,25 +171,55 @@
             <a href="how-i-think.html">Explore my thinking →</a>
         </section>
 
-        <section class="fade-in" style="margin-top:3rem;">
-            <h2 class="mauve">Let’s Connect</h2>
-            <p>
-                I’m open to thoughtful conversations and meaningful work.
-            </p>
-            <a href="https://github.com/the-product-marvel">GitHub</a>
-            &nbsp;•&nbsp;
-            <a href="https://forms.gle/REPLACE_WITH_FORM">Contact form</a>
+        <section class="geek-out">
+            <h2 class="mauve">💡 What I Geek Out On</h2>
+
+            <div class="filters">
+                <button data-filter="ai">🤖 AI & Emerging Tech</button>
+                <button data-filter="cloud">☁️ Cloud & DevOps Transformation</button>
+                <button data-filter="fintech">💳 Fintech & API Platforms</button>
+                <button data-filter="automation">⚙️ Process Automation</button>
+                <button data-filter="strategy">🧩 Product Strategy & Discovery</button>
+                <button data-filter="ux">🎨 UX & Systems Thinking</button>
+            </div>
         </section>
 
-        <footer>
-            <div>
-                © <span class="footer-brand">The Product Marvel</span> <span id="year"></span>
-            </div>
-        </footer>
+        <section class="geek-out reveal">
+            <section class="currently-exploring reveal">
 
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+                <section class="fade-in" style="margin-top:3rem;">
+                    <h2 class="mauve">Let’s Connect</h2>
+                    <p>
+                        I’m open to thoughtful conversations and meaningful work. Let's buiild something! 🛠️
+                    </p>
+                    <a href="https://github.com/the-product-marvel">GitHub</a>
+                    &nbsp;•&nbsp;
+                    <a href="https://forms.gle/REPLACE_WITH_FORM">Contact form</a>
+                </section>
+
+                <footer>
+                    <div>
+                        💭 <i>“Technology is most powerful when it’s rooted in empathy and strategy.”</i>
+
+                        © <span class="footer-brand">The Product Marvel</span> <span id="year"></span>
+                    </div>
+                </footer>
+
+                <script>
+                    document.getElementById('year').textContent = new Date().getFullYear();
+                </script>
+
+                <script>
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('visible');
+                            }
+                        });
+                    });
+
+                    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+                </script>
 
     </div>
 </body>
