@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-    width: 260px;
+    width: 400px;
     margin-bottom: 1rem;
 }
 
@@ -134,6 +134,11 @@ header img {
     text-align: center;
     font-size: 0.9rem;
     position: relative;
+}
+
+.footer img {
+    width: 400px;
+    margin-bottom: 1rem;
 }
 
 .footer-quote {
