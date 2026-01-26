@@ -3,8 +3,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     for (const slot of slots) {
         const path = slot.getAttribute('data-partial');
-        const response = await fetch(path);
-        slot.innerHTML = await response.text();
+
+        try {
+            const response = await fetch(path);
+
+            if (!response.ok) {
+                console.error(`❌ Failed to load partial: ${path}`, response.status);
+                continue;
+            }
+
+            slot.innerHTML = await response.text();
+        } catch (error) {
+            console.error(`🔥 Error loading partial: ${path}`, error);
+        }
     }
 
     // Footer year
