@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     font-size: var(--font-base);
     background: #fff;
     color: #111;
@@ -55,6 +55,7 @@ header img {
 
 .tagline {
     font-weight: 500;
+    text-align: center;
     background: linear-gradient(90deg, #ce9c9c, #e6bcbc);
     -webkit-background-clip: text;
     color: transparent;
