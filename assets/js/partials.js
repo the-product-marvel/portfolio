@@ -5,20 +5,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     for (const slot of slots) {
         const path = slot.getAttribute('data-partial');
-
-        try {
-            const response = await fetch(path);
-
-            if (!response.ok) {
-                console.error(`❌ Failed to load partial: ${path}`, response.status);
-                continue;
-            }
-
-            slot.innerHTML = await response.text();
-        } catch (error) {
-            console.error(`🔥 Error loading partial: ${path}`, error);
-        }
+        const response = await fetch(path);
+        slot.innerHTML = await response.text();
     }
+
+    // ---- Reveal AFTER partials load ----
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     // Footer year
     const year = document.getElementById('year');
