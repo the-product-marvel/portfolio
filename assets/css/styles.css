@@ -84,6 +84,7 @@ h1 {
 
 h2 {
     font-size: var(--font-xl);
+    color: var(--color-mauve);
 }
 
 h3 {
@@ -154,12 +155,12 @@ header img {
 
 .section-divider {
     border: none;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(to right,
             transparent,
             var(--glow-faint),
             transparent);
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 /* =========================================================
