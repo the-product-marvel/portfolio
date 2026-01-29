@@ -230,7 +230,7 @@ header img {
 
 .footer-quote {
     font-style: italic;
-    background: linear-gradient(90deg, var(--color-mauve), var(--color-mauve-soft));
+    background: linear-gradient(90deg, var(--color-mauve), #e6bcbc);
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 1rem;
