@@ -221,6 +221,18 @@ header {
     color: transparent;
 }
 
+.footer-badges {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.footer-badges img {
+    width: 150px;
+    opacity: 0.9;
+}
 
 /* =========================================================
    ACCESSIBILITY
