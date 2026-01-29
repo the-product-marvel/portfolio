@@ -3,12 +3,23 @@
         “Technology is most powerful when it’s rooted in empathy and strategy.”
     </p>
 
-    <p class="footer-brand">
-        © <span>The Product Marvel</span> <span id="year"></span>
-    </p>
+    <div class="footer-meta">
+        © <span class="footer-brand">The Product Marvel</span>
+        <span id="year"></span>
+    </div>
 
-    <img src="/personal-site/assets/images/asana-foundations-certification-badge.png" alt="Asana Foundations Badge"
-        width="150" />
-    <img src="/personal-site/assets/images/asana-ai-for-work-certification-badge.png" alt="Asana AI for Work Badge"
-        width="150" />
+    <div class="footer-badges">
+        <img src="assets/images/asana-foundations-certification-badge.png"
+            alt="Asana Foundations Certification Badge" />
+
+        <img src="assets/images/asana-ai-for-work-certification-badge.png"
+            alt="Asana AI for Work Certification Badge" />
+    </div>
 </footer>
+
+<script>
+    (() => {
+        const year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
+    })();
+</script>
